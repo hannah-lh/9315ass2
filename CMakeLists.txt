@@ -3,16 +3,52 @@ project(C_ENV_SETTING C)
 
 set(CMAKE_C_STANDARD 11)
 
-# 1.1个工程文件只能有一个main方法入口
-# file01.c  method main
-# file02.c  method main
-add_executable(C_ENV_SETTING
-        Codes/main.c
+# x1的测试文件
+# 缺少.h文件或者.c文件的可以自己加
+
+add_executable(x1_test
+        x1.c
+        bits.h
+        bits.c
+        reln.h
+        reln.c
+        defs.h
+        tuple.h
+        tuple.c
+        page.h
+        page.c
         )
 
-add_executable(LinkedList
-        Codes/main.c
-        Codes/list.c
-        Codes/list.h
+# x2的测试文件
+# 缺少.h文件或者.c文件的可以自己加
+add_executable(x2_test
+        x2.c
+        bits.h
+        bits.c
+        reln.h
+        reln.c
+        defs.h
+        tuple.h
+        tuple.c
+        page.h
+        page.c
+        tsig.c
+        tsig.h
         )
 
+# x3的测试文件
+# 缺少.h文件或者.c文件的可以自己加
+add_executable(x3_test
+        x3.c
+        bits.h
+        bits.c
+        reln.h
+        reln.c
+        defs.h
+        tuple.h
+        tuple.c
+        page.h
+        page.c
+        tsig.c
+        tsig.h
+        )
